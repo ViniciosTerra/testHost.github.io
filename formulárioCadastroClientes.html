@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Clientes</title>
+
+    <style>
+
+        body
+
+            {
+
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgba(1, 1, 51, 1);
+
+                color: rgba(255, 255, 255, 1);
+
+            }
+
+        .box
+
+            {
+
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(0, 0, 0, 1);
+
+                border-radius: 15px;
+                padding: 15px;
+
+                width: 30%;
+
+            }
+
+        fieldset
+
+            {
+
+                border: 4px solid rgba(239, 81, 34, 1);
+                border-radius: 15px;
+
+            }
+
+        legend
+
+            {
+
+                background-color: rgba(239, 81, 34, 1);
+
+                padding: 12px;
+
+                border-radius: 15px;
+
+                text-align: center;
+
+            }
+
+        .inputBox
+
+            {
+
+                position: relative;
+
+            }
+
+        .inputUser
+
+            {
+
+                background: none;
+                border: none;
+                border-bottom: 1px solid black;
+                outline: none;
+
+                width: 100%;
+
+                color: rgba(0, 0, 0, 1);
+                
+                font-style: bold;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+        .inputUser:hover ~ .label
+
+            {
+
+                transition-duration: 100ms;
+                left: 20px;
+            
+            }
+
+        .label
+
+            {
+
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                pointer-events: none;
+
+                transition: .5s;
+
+            }
+
+        .inputUser:focus ~ .label,
+        .inputUser:valid ~ .label
+
+            {
+
+                top: -20px;
+
+                font-size: 14px;
+
+                color: rgba(0, 0, 0, 0.5);
+
+            }
+
+        #submit
+
+            {
+
+                background-color: rgba(239, 81, 34, 1);
+                border: none;
+                padding: 15px;
+                font-size: 15px;
+                color: black;
+                cursor: pointer;
+                border-radius: 15px;
+                width: 100%;
+
+            }
+
+        #submit:hover
+
+            {
+
+                background-color: rgba(239, 81, 34, 0.8);
+
+            }
+
+        .logo
+
+            {
+
+                position: absolute;
+                left: 100%;
+                transform: translate(-110%, -15%);
+
+            }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <span>
+        
+        <img src="logoNaimTerra_200px.png" alt="Logo" class="logo">
+    
+    </span>
+
+    <div class="box">
+
+        <form action="">
+
+            <fieldset>
+                
+                <legend><b>Cadastro de Clientes</b></legend>
+
+                <br><br>
+
+                    <div class="inputBox">
+
+                        <input type="text" name= "nome" id= "nome" class="inputUser" required>
+                        <label for="nome" class="label">Nome completo do cliente:</label>
+
+                    </div>
+
+                <br><br>
+
+                    <div class="inputBox">
+
+                        <input type="text" name= "cpf" id= "cpf" class="inputUser" required>
+                        <label for="nome" class="label">CPF/CNPJ:</label>
+    
+                    </div>
+    
+                <br><br>
+
+                    <div class="inputBox">
+
+                        <label for="nome">Data de nascimento:</label>
+                        <input type="date" name= "dataNascimento" id= "dataNascimento" required style="border: none; font-size: 15px;">
+    
+                    </div>
+
+                <br><br>
+
+                    <div class="inputBox">
+
+                        <input type="tel" name= "telefone" id= "telefone" class="inputUser" required>
+                        <label for="telefone" class="label">Telefone:</label>
+
+                    </div>
+
+                <br><br>
+
+                    <div class="inputBox">
+
+                        <input type="email" name= "email" id= "email" class="inputUser" required>
+                        <label for="text" class="label">Email:</label>
+
+                    </div>
+
+                <br><br>
+                
+                <div class="inputBox">
+
+                    <input type="text" name= "cep" id= "cep" class="inputUser" required>
+                    <label for="cep" class="label">CEP:</label>
+
+                </div>
+                
+                <br><br>
+
+                <div class="inputBox">
+
+                    <input type="text" name= "rua" id= "rua" class="inputUser" required>
+                    <label for="rua" class="label">Rua:</label>
+
+                </div>
+
+                <br><br>
+
+                <div class="inputBox">
+
+                    <input type="text" name= "numero" id= "numero" class="inputUser" required>
+                    <label for="numero" class="label">Nº:</label>
+
+                </div>
+
+                <br><br>
+
+                <div class="inputBox">
+
+                    <input type="text" name= "bairro" id= "bairro" class="inputUser" required>
+                    <label for="bairro" class="label">Bairro:</label>
+
+                </div>
+
+                <br><br>
+
+                <div class="inputBox">
+
+                    <input type="text" name= "endereco" id= "endereco" class="inputUser" required>
+                    <label for="nome" class="label">Cidade:</label>
+
+                </div>
+
+                <br>
+
+                <input type="submit" name="submit" id="submit">
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</body> 
+
+</html>
